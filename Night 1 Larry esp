@@ -1,0 +1,17 @@
+local hrp = workspace.Mutant:WaitForChild("HumanoidRootPart")
+
+local hl = Instance.new("Highlight")
+hl.FillColor = Color3.fromRGB(255, 0, 0)
+hl.OutlineColor = Color3.fromRGB(255, 0, 0)
+hl.FillTransparency = 0.5
+hl.OutlineTransparency = 0
+hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+hl.Adornee = workspace.Mutant
+hl.Parent = workspace
+
+local tracker = Instance.new("SelectionBox")
+tracker.Color3 = Color3.fromRGB(255, 0, 0)
+tracker.LineThickness = 0.03
+tracker.SurfaceTransparency = 1
+tracker.Adornee = hrp
+tracker.Parent = workspace
